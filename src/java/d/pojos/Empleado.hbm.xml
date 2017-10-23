@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22-feb-2016 15:36:19 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="d.pojos.Empleado" table="empleado" catalog="prueba" optimistic-lock="version">
+        <id name="ci" type="long">
+            <column name="ci" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="50" not-null="true" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="direccion" length="50" not-null="true" />
+        </property>
+        <property name="genero" type="char">
+            <column name="genero" length="1" not-null="true" />
+        </property>
+        <property name="departamento" type="int">
+            <column name="departamento" not-null="true" />
+        </property>
+        <property name="foto" type="string">
+            <column name="foto" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
